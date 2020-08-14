@@ -1,4 +1,6 @@
 const express = require("express");
+const handlebars = require("express-handlebars");
+const router = require("./controllers/burgers_controller.js");
 
 const PORT = process.env.PORT || 3000;
 
@@ -11,9 +13,6 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set handlebars
-const handlebars = require("express-handlebars");
-
 app.engine(
   "handlebars",
   handlebars({
@@ -22,6 +21,8 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-app.get("/", (req, res) => {
-  res.render("index", { layout: "index" });
+app.use(router);
+
+app.listen(PORT, () => {
+  console.log("App now listening at localhost:" + PORT);
 });
