@@ -1,15 +1,11 @@
 const connection = require("./connection.js");
 
 const orm = {
-  selectAll: function (tableInput, colToSearch) {
-    connection.query(
-      "SELECT * FROM ??",
-      [tableInput, colToSearch],
-      (err, result) => {
-        if (err) throw err;
-        console.log(result);
-      }
-    );
+  selectAll: function () {
+    connection.query("SELECT * FROM burgers", (err, result) => {
+      if (err) throw err;
+      console.log(result);
+    });
   },
   insertOne: function (burger, devoured) {
     connection.query(
