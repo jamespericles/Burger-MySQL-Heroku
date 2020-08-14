@@ -7,14 +7,14 @@ let burger = {
     });
   },
 
-  create: function (cols, val, cb) {
-    orm.create("cats", cols, val, (res) => {
+  create: function (cols, vals, cb) {
+    orm.create("cats", cols, vals, (res) => {
       cb(res);
     });
   },
 
-  update: function (objColVal, condition, cb) {
-    orm.update("cats", objColVal, condition, (res) => {
+  update: function (objColVals, condition, cb) {
+    orm.update("cats", objColVals, condition, (res) => {
       cb(res);
     });
   },
