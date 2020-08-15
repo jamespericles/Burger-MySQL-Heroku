@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
   });
 });
 
-router.post("/api/cats", (req, res) => {
+router.post("/api/burgers", (req, res) => {
   burger.create(
     ["burger_name", "devoured"],
     [req.body.name, req.body.devoured],
@@ -24,7 +24,7 @@ router.post("/api/cats", (req, res) => {
   );
 });
 
-router.put("/api/cats/:id", (req, res) => {
+router.put("/api/burgers/:id", (req, res) => {
   const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
