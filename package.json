@@ -4,7 +4,8 @@
   "description": "Simple web app utilizing MySQL, Heroku, and handlebars to generate a database of burgers to be eaten. The front-end is rendered purely using handlebars.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
