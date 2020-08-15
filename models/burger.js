@@ -8,13 +8,13 @@ let burger = {
   },
 
   create: function (cols, vals, cb) {
-    orm.create("cats", cols, vals, (res) => {
+    orm.create("burgers", cols, vals, (res) => {
       cb(res);
     });
   },
 
   update: function (objColVals, condition, cb) {
-    orm.update("cats", objColVals, condition, (res) => {
+    orm.update("burgers", objColVals, condition, (res) => {
       cb(res);
     });
   },
