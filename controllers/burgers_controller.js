@@ -15,7 +15,6 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
-  console.log("POST, this post route was hit");
   burger.create(
     ["burger_name", "devoured"],
     [req.body.name, req.body.devoured],
@@ -26,7 +25,6 @@ router.post("/api/burgers", (req, res) => {
 });
 
 router.put("/api/burgers/:id", (req, res) => {
-  console.log("PUT, this put route was hit");
   const condition = "id = " + req.params.id;
   console.log("condition", condition);
   burger.update({ devoured: req.body.devoured }, condition, (result) => {
