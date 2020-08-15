@@ -3,7 +3,7 @@ $(function () {
     let id = $(this).data("id");
     let newDevoured = $(this).data("devoured");
     let newDevouredState = {
-      devoured: newDevoured,
+      devoured: 1,
     };
 
     // Send the PUT request.
@@ -20,7 +20,6 @@ $(function () {
   $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
     let newBurger = {
       name: $("#burger").val().trim(),
     };
