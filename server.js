@@ -23,6 +23,6 @@ app.set("view engine", "handlebars");
 
 app.use(router);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log("App now listening at localhost:" + PORT);
 });
