@@ -1,0 +1,40 @@
+$(function () {
+  $(".change-devoured").on("click", function (event) {
+    let id = $(this).data("id");
+    let newSleep = $(this).data("devoured");
+
+    let newDevouredState = {
+      devoured: newDevoured,
+    };
+
+    // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: newDevouredState,
+    }).then(function () {
+      console.log("changed devoured state to", newDevoured);
+      // Reload the page to get the updated list
+      location.reload();
+    });
+  });
+
+  $(".create-form").on("submit", function (event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+
+    let newBurger = {
+      name: $("#burger").val().trim(),
+      devoured: $("[name=devoured]:checked").val().trim(),
+    };
+
+    // Send the POST request.
+    $.ajax("/api/burgers", {
+      type: "POST",
+      data: newBurger,
+    }).then(function () {
+      console.log("added new burger");
+      // Reload the page to get the updated list
+      location.reload();
+    });
+  });
+});
