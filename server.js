@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.engine(
   "handlebars",
+
   handlebars({
     layoutsDir: __dirname + "/views/layouts",
   })
