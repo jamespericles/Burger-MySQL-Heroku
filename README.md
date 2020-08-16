@@ -24,7 +24,7 @@
 
 This simple application was created in order to tie in my knowledge of MySQL, Heroku, and Handblebars together. Within the database exists one table for each burger, with columns for the id, name, and devoured state of the burger. The user is able to add their own burgers they'd like to eat, which will then be added to the MySQL database. Users are also able to eat a burger that exists within the database, which will change its devoured state to true.
 
-The project is deployed (here)[https://burger-mysql-heroku.herokuapp.com/]
+The project is deployed [here](https://burger-mysql-heroku.herokuapp.com/)
 
 ### <a name="Screenshots"></a>Screenshots
 
