@@ -24,17 +24,15 @@
 
 This simple application was created in order to tie in my knowledge of MySQL, Heroku, and Handblebars together. Within the database exists one table for each burger, with columns for the id, name, and devoured state of the burger. The user is able to add their own burgers they'd like to eat, which will then be added to the MySQL database. Users are also able to eat a burger that exists within the database, which will change its devoured state to true.
 
+The project is deployed (here)[https://burger-mysql-heroku.herokuapp.com/]
+
 ### <a name="Screenshots"></a>Screenshots
 
-WIP
+https://github.com/jamespericles/Burger-MySQL-Heroku/blob/master/screenshots/Landing_Page.png
 
 ### <a name="Installation"></a>Installation
 
 After downloading the repo, within your console run `npm i` to install all necessary files. Navigate to the database folder (`db`) and used `mysql -u root -p` and then `source schema.sql`, `source seeds.sql` to create your own database. From there, `nodemon server.js` in order to open the server locally. Otherwise, the project is also deployed at WIP
-
-### <a name="Usage"></a>Usage
-
-DELETE
 
 ### <a name="License"></a>License
 
@@ -59,14 +57,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-### <a name="Contributing"></a>Contributing
-
-DELETE
-
-### <a name="Tests"></a>Tests
-
-DELETE
 
 ### <a name="Questions"></a>Questions
 
