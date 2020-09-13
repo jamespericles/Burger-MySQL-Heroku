@@ -60,7 +60,7 @@ SOFTWARE.
 
 ### <a name="Questions"></a>Questions
 
-james.pericles@aol.com
+I can be reached at jamesspericles@gmail.com with any questions regarding this project.
 
 ### <a name="Github"></a>Github
 
