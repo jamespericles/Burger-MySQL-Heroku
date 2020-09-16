@@ -28,7 +28,7 @@ The project is deployed [here](https://burger-mysql-heroku.herokuapp.com/)
 
 ### <a name="Screenshots"></a>Screenshots
 
-[Landing_Page](https://github.com/jamespericles/Burger-MySQL-Heroku/blob/master/screenshots/Landing_Page.png)
+![Landing_Page](https://github.com/jamespericles/Burger-MySQL-Heroku/blob/master/screenshots/Landing_Page.png)
 
 ### <a name="Installation"></a>Installation
 
